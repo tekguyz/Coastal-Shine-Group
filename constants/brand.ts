@@ -9,5 +9,8 @@ export const BRAND = {
   FOUNDED: "2019",
   HOURS: "Weekdays 6:30AM–6:30PM | Sat 6AM–6:30PM | Sun 9AM–5PM",
   SCHEDULE: "Daily, Weekly, Bi-Weekly, Monthly, On-call",
-  NETLIFY_FORM_NAME: "coastal-leads"
+  NETLIFY_FORM_NAME: "coastal-leads",
+  INSTAGRAM: "https://www.instagram.com/coastalshineboatcare",
+  FACEBOOK: "https://www.facebook.com/coastalshineboatcare",
+  SOCIAL_HANDLE: "@coastalshineboatcare"
 } as const;

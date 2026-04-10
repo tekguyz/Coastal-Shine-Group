@@ -31,8 +31,8 @@ export default function ReviewsSection() {
   const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
 
   return (
-    <section id="reviews" className="bg-cream-dark py-24 overflow-hidden" ref={containerRef}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="reviews" className="bg-cream-dark py-24 md:py-32 overflow-hidden" ref={containerRef}>
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl text-navy-deep mb-4">

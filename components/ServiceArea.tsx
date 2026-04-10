@@ -2,8 +2,8 @@ import { BRAND } from '@/constants/brand';
 
 export default function ServiceArea() {
   return (
-    <section id="service-area" className="bg-chrome py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="service-area" className="bg-chrome py-24 md:py-32">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           
           <div>

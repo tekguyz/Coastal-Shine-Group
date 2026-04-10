@@ -33,8 +33,8 @@ export default function Home() {
       </RevealOnScroll>
 
       {/* Contact Section */}
-      <section id="contact" className="bg-navy-mid py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="contact" className="bg-navy-mid py-24 md:py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             
             {/* Left Col: Info */}

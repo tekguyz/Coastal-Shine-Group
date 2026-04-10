@@ -15,6 +15,27 @@ export const metadata: Metadata = {
     type: 'website',
     title: COPY.META_TITLE,
     description: COPY.META_DESCRIPTION,
+    siteName: BRAND.BUSINESS_NAME,
+    images: [
+      {
+        url: 'https://picsum.photos/seed/coastal-shine/1200/630',
+        width: 1200,
+        height: 630,
+        alt: BRAND.BUSINESS_NAME,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: COPY.META_TITLE,
+    description: COPY.META_DESCRIPTION,
+    creator: BRAND.SOCIAL_HANDLE,
+  },
+  other: {
+    'contact:phone_number': BRAND.PHONE,
+    'contact:email': BRAND.EMAIL,
+    'facebook:profile': BRAND.FACEBOOK,
+    'instagram:profile': BRAND.INSTAGRAM,
   },
   icons: {
     icon: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚓</text></svg>',
