@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hidden Forms</title>
+</head>
+<body>
+  <!-- A hidden form to help Netlify's bots parse the form structure -->
+  <form name="coastal-leads" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="tel" name="phone" />
+    <input type="text" name="vessel" />
+    <select name="service">
+      <option value="Basic Wash">Basic Wash</option>
+      <option value="Full Detail">Full Detail</option>
+      <option value="Full Restoration">Full Restoration</option>
+      <option value="Custom">Custom Add-ons / Other</option>
+    </select>
+    <input type="text" name="bot-field" />
+  </form>
+</body>
+</html>

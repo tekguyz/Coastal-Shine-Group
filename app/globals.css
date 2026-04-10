@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-navy-deep:      oklch(22% 0.06 260);
+  --color-navy-mid:       oklch(28% 0.06 260);
+  --color-navy-light:     oklch(35% 0.06 260);
+  --color-chrome:         oklch(85% 0.01 260);
+  --color-chrome-dark:    oklch(65% 0.01 260);
+  --color-cream:          oklch(96% 0.01 95);
+  --color-white:          oklch(98% 0 0);
+  --color-text-on-dark:   oklch(98% 0 0);
+  --color-text-muted-dark:oklch(75% 0.02 260);
+  --color-text-on-light:  oklch(22% 0.06 260);
+
+  --font-display: var(--font-playfair), Georgia, serif;
+  --font-body:    var(--font-inter), system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-navy-deep);
+    color: var(--color-text-on-dark);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  .heading-serif {
+    font-family: var(--font-display);
+  }
+  .btn-chrome {
+    background-color: var(--color-chrome);
+    color: var(--color-navy-deep);
+    font-weight: 700;
+    border-radius: 0.125rem; /* slight rounding, not full pill */
+    padding: 0.875rem 2rem;
+    transition: all 0.3s ease;
+  }
+  .btn-chrome:hover {
+    background-color: var(--color-white);
+  }
+}
