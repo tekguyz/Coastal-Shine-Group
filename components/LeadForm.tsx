@@ -15,10 +15,16 @@ export default function LeadForm() {
     const form = e.currentTarget;
     const formData = new FormData(form);
     
+    // Explicitly ensure form-name is present
+    formData.set('form-name', 'coastal-leads');
+    
     try {
-      await fetch('/', {
+      await fetch('/forms.html', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        headers: { 
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'X-Requested-With': 'XMLHttpRequest'
+        },
         body: new URLSearchParams(formData as any).toString(),
       });
       setIsSubmitted(true);
@@ -67,6 +73,8 @@ export default function LeadForm() {
       <form 
         name="coastal-leads" 
         method="POST" 
+        action="/forms.html"
+        encType="multipart/form-data"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}

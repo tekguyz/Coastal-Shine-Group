@@ -1,5 +1,4 @@
 import { COPY } from '@/constants/copy';
-import RevealOnScroll from '@/components/RevealOnScroll';
 
 export default function TrustBar() {
   return (
@@ -9,23 +8,21 @@ export default function TrustBar() {
         <div className="flex flex-col md:flex-row justify-evenly items-center gap-8 md:gap-0">
           {COPY.TRUST_BAR_STATS.map((item, index) => (
             <div key={index} className="flex-1 w-full md:w-auto">
-              <RevealOnScroll delay={index * 0.1}>
-                <div className={`flex flex-col md:flex-row items-center justify-center gap-4 px-4 ${
-                  index !== COPY.TRUST_BAR_STATS.length - 1 ? 'border-none md:border-r border-navy-deep/20' : ''
-                }`}>
-                  <span className="text-3xl md:text-4xl filter drop-shadow-sm text-navy-deep" aria-hidden="true">
-                    {item.icon}
+              <div className={`flex flex-col md:flex-row items-center justify-center gap-4 px-4 ${
+                index !== COPY.TRUST_BAR_STATS.length - 1 ? 'border-none md:border-r border-navy-deep/20' : ''
+              }`}>
+                <span className="text-3xl md:text-4xl filter drop-shadow-sm text-navy-deep" aria-hidden="true">
+                  {item.icon}
+                </span>
+                <div className="text-center md:text-left">
+                  <span className="block text-navy-deep font-bold text-lg md:text-xl uppercase tracking-tight leading-none">
+                    {item.label.split(' ')[0]}
                   </span>
-                  <div className="text-center md:text-left">
-                    <span className="block text-navy-deep font-bold text-lg md:text-xl uppercase tracking-tight leading-none">
-                      {item.label.split(' ')[0]}
-                    </span>
-                    <span className="block text-navy-deep/80 font-medium text-xs md:text-sm uppercase tracking-[0.2em] mt-1">
-                      {item.label.split(' ').slice(1).join(' ')}
-                    </span>
-                  </div>
+                  <span className="block text-navy-deep/80 font-medium text-xs md:text-sm uppercase tracking-[0.2em] mt-1">
+                    {item.label.split(' ').slice(1).join(' ')}
+                  </span>
                 </div>
-              </RevealOnScroll>
+              </div>
             </div>
           ))}
         </div>

@@ -7,7 +7,16 @@
 </head>
 <body>
   <!-- A hidden form to help Netlify's bots parse the form structure -->
-  <form name="coastal-leads" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+  <form 
+    name="coastal-leads" 
+    data-netlify="true" 
+    netlify-honeypot="bot-field" 
+    action="/forms.html"
+    method="POST"
+    enctype="multipart/form-data"
+    hidden
+  >
+    <input type="hidden" name="form-name" value="coastal-leads" />
     <input type="text" name="name" />
     <input type="tel" name="phone" />
     <input type="text" name="vessel" />
