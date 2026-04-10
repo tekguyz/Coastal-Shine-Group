@@ -1,44 +1,49 @@
 export const COPY = {
-  HERO_EYEBROW: "EST. 2019 • POMPANO BEACH, FL",
-  HERO_HEADLINE: "Marine-Grade Preservation.",
-  HERO_SUBHEAD: "Mobile dockside detailing and high-end hull restoration from Fort Lauderdale to Deerfield Beach.",
-  
+  // HERO SECTION
+  HERO_EYEBROW: "Est. 2019 • Dockside in Pompano Beach",
+  HERO_HEADLINE: "Your yacht, restored to its prime.",
+  HERO_SUBHEAD: "Expert hull restoration and mobile detailing for owners who don't settle for 'good enough.' We bring the showroom shine to your dock.",
+
+  // TRUST BAR
   TRUST_BAR_STATS: [
     { icon: "⚓", label: "Founded 2019" },
-    { icon: "⭐", label: "5-Star Rated" },
-    { icon: "🛡️", label: "Master Detailer Yahweh" },
+    { icon: "⭐", label: "Five-Star Service" },
+    { icon: "🛡️", label: "Led by Yahweh" }
   ],
 
+  // SERVICES SECTION (BENTO GRID)
   SERVICES_COPY: [
     {
-      title: "Full Restoration",
-      description: "Heavy oxidation removal and multi-stage paint correction followed by professional-grade ceramic sealants for long-lasting protection.",
-      span: "col-span-1 md:col-span-2 lg:col-span-2",
+      title: "The Full Restoration",
+      description: "Our signature service. We strip away years of salt and sun damage to reveal the deep, original color hidden beneath the oxidation. Finished with premium sealants for a mirror-like shine.",
+      span: "md:col-span-2 md:row-span-2"
     },
     {
-      title: "Basic Wash & Interior",
-      description: "Starting at $15/ft. Deep cleaning of all exterior surfaces and meticulous vinyl conditioning to preserve your cabin's elegance.",
-      span: "col-span-1",
+      title: "Precision Wash",
+      description: "A hand-detailed deep clean from the waterline up. We focus on the corners and crevices that standard washes miss, leaving your gelcoat and vinyl spotless.",
+      span: "md:col-span-1"
     },
     {
-      title: "Full Detail & Wax",
-      description: "Precision machine wax application, comprehensive metal polishing, and specialized window treatments for a crystal-clear finish.",
-      span: "col-span-1",
+      title: "Detail & Seasonal Wax",
+      description: "High-speed buffing and hand-applied waxes to lock in your finish. Perfect for maintaining that high-gloss look throughout the Florida boating season.",
+      span: "md:col-span-1"
     },
     {
-      title: "Custom Add-ons",
-      description: "Specialized services including engine cowling refurbishment, rust remediation, and teak wood preservation.",
-      span: "col-span-1 md:col-span-3 lg:col-span-4",
-    },
+      title: "Brightwork & Extras",
+      description: "Rust removal, metal polishing, and engine cowling refurbishment. We ensure every piece of hardware on your vessel looks as sharp as the hull.",
+      span: "md:col-span-2"
+    }
   ],
 
-  ABOUT_HEADLINE: "Bringing a showroom shine back to the water.",
+  // ABOUT SECTION
+  ABOUT_HEADLINE: "We treat your boat like it's our own.",
+  ABOUT_QUOTE: "I started this company because I believe a yacht is more than just a vessel—it's an investment that deserves a master's touch.",
+
+  // CONTACT & FORM
+  FORM_HEADING: "Get a Dockside Quote",
+  FORM_SUBHEADING: "Tell us about your vessel and we'll get back to you within the hour to discuss a plan.",
   
-  FORM_HEADING: "Let’s Talk About Your Vessel.",
-  FORM_SUBHEADING: "Dockside service from Fort Lauderdale to Deerfield Beach.",
-  
-  NAVBAR_CTA: "Request Quote",
-  
-  META_TITLE: "Coastal Shine Group | Premium Marine Detailing Pompano Beach",
-  META_DESCRIPTION: "Mobile dockside detailing and high-end hull restoration in Pompano Beach & Fort Lauderdale. Led by Master Detailer Yahweh. Call 561-774-7229.",
+  // METADATA
+  META_TITLE: "Coastal Shine Group | Premium Yacht Detailing & Restoration",
+  META_DESCRIPTION: "Mobile dockside detailing and high-end hull restoration in Pompano Beach & Fort Lauderdale. Expert care by Yahweh. 561-774-7229."
 };
